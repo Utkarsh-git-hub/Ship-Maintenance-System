@@ -34,7 +34,7 @@ export default function LoginPage() {
             color: 'primary.main',
           }}
         >
-          Ship Dashboard
+          Login to Dashboard
         </Typography>
         <LoginForm />
       </Paper>
