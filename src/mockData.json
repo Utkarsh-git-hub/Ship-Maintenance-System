@@ -1,0 +1,44 @@
+{
+  "users": [
+    { "id": "1", "role": "Admin",     "email": "admin@gmail.com",       "password": "admin123" },
+    { "id": "2", "role": "Inspector", "email": "inspector@gmail.com",   "password": "inspect123" },
+    { "id": "3", "role": "Engineer",  "email": "engineer@gmail.com",    "password": "engine123" },
+    { "id": "4", "role": "Admin",     "email": "admin2@gmail.com",      "password": "admin234" },
+    { "id": "5", "role": "Inspector", "email": "inspector2@gmail.com",  "password": "inspect234" },
+    { "id": "6", "role": "Engineer",  "email": "engineer2@gmail.com",   "password": "engine234" },
+    { "id": "7", "role": "Admin",     "email": "admin3@gmail.com",      "password": "admin345" },
+    { "id": "8", "role": "Inspector", "email": "inspector3@gmail.com",  "password": "inspect345" },
+    { "id": "9", "role": "Engineer",  "email": "engineer3@gmail.com",   "password": "engine345" }
+  ],
+  "ships": [
+    { "id": "s1", "name": "Ever Given",          "imo": "9811000", "flag": "Panama",       "status": "Active" },
+    { "id": "s2", "name": "Maersk Alabama",      "imo": "9164263", "flag": "USA",          "status": "Under Maintenance" },
+    { "id": "s3", "name": "Queen Mary 2",        "imo": "9241061", "flag": "UK",           "status": "Active" },
+    { "id": "s4", "name": "Symphony of the Seas","imo": "9744001", "flag": "Bahamas",      "status": "Active" },
+    { "id": "s5", "name": "Costa Concordia",      "imo": "9320544", "flag": "Italy",        "status": "Decommissioned" },
+    { "id": "s6", "name": "USS Enterprise",      "imo": "7606391", "flag": "USA",          "status": "Decommissioned" }
+  ],
+  "components": [
+    { "id": "c1", "shipId": "s1", "name": "Main Engine",        "serialNumber": "ME-1234",  "installDate": "2020-01-10", "lastMaintenanceDate": "2024-03-12" },
+    { "id": "c2", "shipId": "s2", "name": "Radar",              "serialNumber": "RAD-5678", "installDate": "2021-07-18", "lastMaintenanceDate": "2023-12-01" },
+    { "id": "c3", "shipId": "s3", "name": "Navigation System",  "serialNumber": "NAV-9012", "installDate": "2019-05-22", "lastMaintenanceDate": "2024-02-15" },
+    { "id": "c4", "shipId": "s3", "name": "Life Raft",          "serialNumber": "LR-3456",  "installDate": "2022-11-05", "lastMaintenanceDate": "2024-04-20" },
+    { "id": "c5", "shipId": "s4", "name": "Air Conditioning",   "serialNumber": "AC-7890",  "installDate": "2021-03-30", "lastMaintenanceDate": "2024-01-10" },
+    { "id": "c6", "shipId": "s5", "name": "Hull Plating",       "serialNumber": "HP-2345",  "installDate": "2012-08-14", "lastMaintenanceDate": "2023-09-25" },
+    { "id": "c7", "shipId": "s6", "name": "Reactor Core",       "serialNumber": "RC-6789",  "installDate": "1985-04-01", "lastMaintenanceDate": "2020-10-30" },
+    { "id": "c8", "shipId": "s2", "name": "Anchor Winch",       "serialNumber": "AW-1122",  "installDate": "2018-06-21", "lastMaintenanceDate": "2023-11-11" }
+  ],
+  "jobs": [
+    { "id": "j1",  "componentId": "c1", "shipId": "s1", "type": "Inspection",  "priority": "High",   "status": "Open",         "assignedEngineerId": "3", "scheduledDate": "2025-05-05" },
+    { "id": "j2",  "componentId": "c2", "shipId": "s2", "type": "Repair",      "priority": "Medium", "status": "In Progress", "assignedEngineerId": "6", "scheduledDate": "2025-06-10" },
+    { "id": "j3",  "componentId": "c3", "shipId": "s3", "type": "Inspection",  "priority": "Low",    "status": "Completed",   "assignedEngineerId": "9", "scheduledDate": "2025-04-20" },
+    { "id": "j4",  "componentId": "c4", "shipId": "s3", "type": "Replacement", "priority": "High",   "status": "Open",        "assignedEngineerId": "3", "scheduledDate": "2025-07-15" },
+    { "id": "j5",  "componentId": "c5", "shipId": "s4", "type": "Inspection",  "priority": "Medium", "status": "Open",        "assignedEngineerId": "6", "scheduledDate": "2025-08-01" },
+    { "id": "j6",  "componentId": "c6", "shipId": "s5", "type": "Repair",      "priority": "High",   "status": "Completed",   "assignedEngineerId": "9", "scheduledDate": "2025-03-12" },
+    { "id": "j7",  "componentId": "c7", "shipId": "s6", "type": "Inspection",  "priority": "Low",    "status": "Open",        "assignedEngineerId": "3", "scheduledDate": "2025-09-05" },
+    { "id": "j8",  "componentId": "c8", "shipId": "s2", "type": "Replacement", "priority": "Medium", "status": "In Progress", "assignedEngineerId": "6", "scheduledDate": "2025-06-20" },
+    { "id": "j9",  "componentId": "c1", "shipId": "s1", "type": "Repair",      "priority": "High",   "status": "Open",        "assignedEngineerId": "9", "scheduledDate": "2025-10-01" },
+    { "id": "j10", "componentId": "c5", "shipId": "s4", "type": "Replacement", "priority": "Low",    "status": "Completed",   "assignedEngineerId": "3", "scheduledDate": "2025-02-28" }
+  ]
+}
+
